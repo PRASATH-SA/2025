@@ -1,0 +1,52 @@
+.red{
+    color:red;
+}
+.container{
+    transform: translateY(250%);
+    text-align:center;
+    z-index:1000;
+    position: relative; 
+}
+body{
+    color:white;
+    background-color: black;
+    overflow: hidden;
+}
+.background{
+    z-index:-1000;
+    height:300vh;
+    width:100%;
+    background-image: url(sparks.gif);
+    background-position: center;
+    background-clip: border-box;
+    background-size: 10%;
+    position: relative; 
+    transform: rotate(45deg);
+    top:-900px;
+}
+@keyframes color_changer {
+    0%{
+        color:green;
+    }
+    25%{
+        color:yellow;
+
+    }
+    50%{
+        color:blue;
+
+    }
+    75%{
+        color:orange;
+
+    }
+    100%{
+        color:red;
+
+    }
+}
+h1{
+    text-shadow: 2px 2px 3px blue;
+    transition: 3s;
+    animation: color_changer 10s infinite forwards;
+}
