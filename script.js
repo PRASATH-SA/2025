@@ -1,2 +1,2 @@
 var screen = document.getElementById("screen");
-screen.style.visibility="hidden"
+screen.style.visibility=""
