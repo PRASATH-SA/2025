@@ -11,9 +11,11 @@ body{
     color:white;
     background-color: black;
     overflow: hidden;
+    margin:0;
+
 }
 .background{
-    z-index:1000;
+    z-index:-1000;
     height:300vh;
     width:100%;
     background-image: url(sparks.gif);
@@ -51,8 +53,18 @@ h1{
     animation: color_changer 10s infinite forwards;
 }
 .screen{
-    background-color:black;
+    background-color:white;
     height:600vh;
     width:100%;
-    z-index:-10000;
+}
+.screen img{
+    position: sticky;
+    top:50%;
+    left:50%;
+    animation: ROTATE 5s infinite alternate;
+}
+@keyframes ROTATE {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+
 }
