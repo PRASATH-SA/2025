@@ -56,6 +56,7 @@ h1{
     background-color:white;
     height:600vh;
     width:100%;
+    color:black;
 }
 .screen img{
     position: sticky;
