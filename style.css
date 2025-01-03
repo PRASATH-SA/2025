@@ -13,7 +13,7 @@ body{
     overflow: hidden;
 }
 .background{
-    z-index:-1000;
+    z-index:1000;
     height:300vh;
     width:100%;
     background-image: url(sparks.gif);
@@ -49,4 +49,10 @@ h1{
     text-shadow: 2px 2px 3px blue;
     transition: 3s;
     animation: color_changer 10s infinite forwards;
+}
+.screen{
+    background-color:black;
+    height:600vh;
+    width:100%;
+    z-index:-10000;
 }
